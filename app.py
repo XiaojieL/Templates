@@ -1,5 +1,6 @@
 from flask import Flask, render_template  #NEW IMPORT!!
 
+# TEST
 app = Flask(__name__)    #This is creating a new Flask object
 
 #decorator that links...
