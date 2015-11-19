@@ -25,7 +25,7 @@ def other():
 
 #Hmmm, do we need another one?
 
-@app.route('/<name>')          							#This is the main URL
+@app.route('/<hello>')          							#This is the main URL
 def home(name):
     return render_template("%s.html" % name, name = name)	#The argument should be in templates folder
 
