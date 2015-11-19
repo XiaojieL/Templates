@@ -8,7 +8,7 @@ app = Flask(__name__)    #This is creating a new Flask object
 def index():
     return render_template("index.html", name = "index", title = "Home Page")		#The argument should be in templates folder
 
-@app.route('/interests')   
+@app.route('/interests')
 def interests():
     return render_template("interests.html", name = "interests", title = "Interests Page")
 
@@ -25,7 +25,7 @@ def other():
 
 #Hmmm, do we need another one?
 
-@app.route('/<name>')          							#This is the main URL
+@app.route('/<hello>')          							#This is the main URL
 def home(name):
     return render_template("%s.html" % name, name = name)	#The argument should be in templates folder
 
